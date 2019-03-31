@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
 				if(choice < 50)
 				{
 					GameObject Clone = (Instantiate(Iceberg, spawnPosition, spawnRotation)) as GameObject;
-					int ranInt = Random.Range(1, 7);
+					int ranInt = Random.Range(1, 4);
 
 					if (ranInt == 1)
 					{
