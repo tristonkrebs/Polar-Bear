@@ -2555,8 +2555,6 @@ MonoBehaviour:
   dist: 6
   sprite:
   - {fileID: 21300000, guid: 06a0447af2924ab41970b50ecc331df7, type: 3}
-  - {fileID: 21300000, guid: 6ed5e7dc72a34f1468e6e3ffc09270ec, type: 3}
-  - {fileID: 21300000, guid: 0730d53a7472f0d448ed545bfc55d2d8, type: 3}
   - {fileID: 21300000, guid: f04d7d991085b4b4db7283a3073f271e, type: 3}
   - {fileID: 21300000, guid: fadd715c2251c0d4f9f56f6d7c59c970, type: 3}
   - {fileID: 21300000, guid: a2ec3ef6f2c7d144d86c42abae5f8803, type: 3}

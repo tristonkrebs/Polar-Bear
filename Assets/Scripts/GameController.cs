@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
 				if(choice < 50)
 				{
 					GameObject Clone = (Instantiate(Iceberg, spawnPosition, spawnRotation)) as GameObject;
-					int ranInt = Random.Range(1, 4);
+					int ranInt = Random.Range(1, 5);
 
 					if (ranInt == 1)
 					{
@@ -72,14 +72,6 @@ public class GameController : MonoBehaviour
 					else if (ranInt == 4)
 					{
 						Clone.GetComponent<SpriteRenderer>().sprite = sprite[3];
-					}
-					else if (ranInt == 5)
-					{
-						Clone.GetComponent<SpriteRenderer>().sprite = sprite[4];
-					}
-					else if (ranInt == 6)
-					{
-						Clone.GetComponent<SpriteRenderer>().sprite = sprite[5];
 					}
 
 				}
