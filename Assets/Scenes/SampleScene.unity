@@ -2550,9 +2550,14 @@ MonoBehaviour:
   WinTetxt: {fileID: 243790871}
   Iceberg: {fileID: 8514458642148967510, guid: 18afea0e7d61fad4583d0e1eb9dea023, type: 3}
   Empty: {fileID: 911551473538951203, guid: 37151fe2658066747988fbb75b9d4b0a, type: 3}
-  Trash: {fileID: 8514458642148967510, guid: 8135512bad37c0b4dadfc2e871c5b61f, type: 3}
-  Cracked: {fileID: 8514458642148967510, guid: b1466e0721853e049a2ece0d2047617c, type: 3}
   high: 2.5
   left: -8
   dist: 6
+  sprite:
+  - {fileID: 21300000, guid: 06a0447af2924ab41970b50ecc331df7, type: 3}
+  - {fileID: 21300000, guid: 6ed5e7dc72a34f1468e6e3ffc09270ec, type: 3}
+  - {fileID: 21300000, guid: 0730d53a7472f0d448ed545bfc55d2d8, type: 3}
+  - {fileID: 21300000, guid: f04d7d991085b4b4db7283a3073f271e, type: 3}
+  - {fileID: 21300000, guid: fadd715c2251c0d4f9f56f6d7c59c970, type: 3}
+  - {fileID: 21300000, guid: a2ec3ef6f2c7d144d86c42abae5f8803, type: 3}
   spawnWait: 1

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Credit: Triston Krebs
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,12 +10,12 @@ public class GameController : MonoBehaviour
 
 	public GameObject Iceberg;
 	public GameObject Empty;
-	public GameObject Trash;
-	public GameObject Cracked;
 
 	public float high;
 	public float left;
 	public int dist;
+
+	public Sprite[] sprite;
 
 	public float spawnWait;
 
@@ -51,25 +52,44 @@ public class GameController : MonoBehaviour
 
 				float choice = Random.Range(0, 100);
 
-				if(choice < 20)
+				if(choice < 50)
 				{
-					Instantiate(Iceberg, spawnPosition, spawnRotation);
-				}
-				else if(choice < 40)
-				{
-					Instantiate(Trash, spawnPosition, spawnRotation);
-				}
-				else if (choice < 60)
-				{
-					Instantiate(Cracked, spawnPosition, spawnRotation);
+					GameObject Clone = (Instantiate(Iceberg, spawnPosition, spawnRotation)) as GameObject;
+					int ranInt = Random.Range(1, 7);
+
+					if (ranInt == 1)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[0];
+					}
+					else if (ranInt == 2)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[1];
+					}
+					else if (ranInt == 3)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[2];
+					}
+					else if (ranInt == 4)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[3];
+					}
+					else if (ranInt == 5)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[4];
+					}
+					else if (ranInt == 6)
+					{
+						Clone.GetComponent<SpriteRenderer>().sprite = sprite[5];
+					}
+
 				}
 				else
 				{
 					Instantiate(Empty, spawnPosition, spawnRotation);
 				}
-					
 			}
 			yield return new WaitForSeconds(spawnWait);
 		}
 	}
 }
+// Credit: Triston Krebs

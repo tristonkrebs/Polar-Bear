@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿// Credit: Triston Krebs
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -47,3 +48,4 @@ public class IceMover : MonoBehaviour
 		
 	}
 }
+// Credit: Triston Krebs
