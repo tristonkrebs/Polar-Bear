@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
 
 	public GameObject Iceberg;
 	public GameObject Empty;
+	public GameObject Trash;
+	public GameObject Cracked;
 
 	public float high;
 	public float left;
@@ -24,7 +26,7 @@ public class GameController : MonoBehaviour
 
 	public void WinCondition()
 	{
-		WinTetxt.text = "You Win!";
+		//WinTetxt.text = "You Win!";
 	}
 
 	public void looseCondition()
@@ -49,10 +51,18 @@ public class GameController : MonoBehaviour
 
 				float choice = Random.Range(0, 100);
 
-				if(choice < 50)
+				if(choice < 20)
 				{
 					Instantiate(Iceberg, spawnPosition, spawnRotation);
-				}	
+				}
+				else if(choice < 40)
+				{
+					Instantiate(Trash, spawnPosition, spawnRotation);
+				}
+				else if (choice < 60)
+				{
+					Instantiate(Cracked, spawnPosition, spawnRotation);
+				}
 				else
 				{
 					Instantiate(Empty, spawnPosition, spawnRotation);
